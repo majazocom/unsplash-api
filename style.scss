@@ -1,0 +1,21 @@
+// skapa variabler
+$primary-green: rgb(47, 122, 76);
+$primary-pink: rgb(244, 99, 171);
+
+// skapa mixins
+@mixin centerRows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+};
+
+body {
+    background-color: aqua
+}
+
+.result-container {
+    @include centerRows;
+    background-color: $primary-pink;
+}
